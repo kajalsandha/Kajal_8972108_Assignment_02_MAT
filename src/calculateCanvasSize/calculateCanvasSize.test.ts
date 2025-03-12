@@ -1,9 +1,24 @@
-import calculateCanvasSize from "./calculateCanvasSize";
+import paintRequiredCalculator from "./paintRequiredCalculator";
 
-describe("calculateCanvasSize", () => {
-  test("returns correct result", () => {
-    const result = calculateCanvasSize("10", "100");
+describe("paint required calculator", () => {
+  test("should return expected result", () => {
+    const result = paintRequiredCalculator(50, 10);
+    expect(result).toEqual(5);
+  });
 
-    expect(result).toEqual(1000);
-  })
+  test("should return 0 when area is 0", () => {
+    const result = paintRequiredCalculator(0, 10);
+    expect(result).toEqual(0);
+  });
+
+  test("should return 0 when coveragePerLiter is 0", () => {
+    const result = paintRequiredCalculator(50, 0);
+    expect(result).toEqual(0);
+  });
+
+  test("should handle invalid inputs gracefully", () => {
+    const result = paintRequiredCalculator(NaN, 10);
+    expect(result).toEqual(0);
+  });
 });
+

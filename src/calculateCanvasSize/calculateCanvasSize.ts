@@ -1,8 +1,9 @@
+export default function paintRequiredCalculator(area: number, coveragePerLiter: number): number {
+  if (isNaN(area) || isNaN(coveragePerLiter) || area <= 0 || coveragePerLiter <= 0) {
+    return 0;
+  }
 
-export default function calculateCanvasSize(
-  length: string,
-  width: string
-) {
-  return parseInt(length) * parseInt(width);
+  return area / coveragePerLiter;
 }
+
 
