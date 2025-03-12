@@ -1,4 +1,3 @@
-
 import calculateCanvasSize from "./calculateCanvasSize";
 
 describe("calculateCanvasSize", () => {
@@ -8,4 +7,3 @@ describe("calculateCanvasSize", () => {
     expect(result).toEqual(1000);
   })
 });
-

@@ -3,21 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kajalsandha/Kajal_8972108_Assignment_02_MAT.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kajalsandha/Kajal_8972108_Assignment_02_MAT/issues"
-  },
-  "homepage": "https://github.com/kajalsandha/Kajal_8972108_Assignment_02_MAT#readme",
-  "description": "",
   "dependencies": {
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "ts-jest": "^29.2.6",
+    "ts-node": "^10.9.2"
   }
 }
